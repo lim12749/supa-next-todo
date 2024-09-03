@@ -1,10 +1,11 @@
 "use client";
-import { getTodos } from "@/apis/todos-no-rls";
+import {createTodos, deleteTodoHard, deleteTodoSoft, getTodos, getTodosById} from "@/apis/todos-no-rls";
 import React, { useEffect } from "react";
 
 const TodoContainer = () => {
     useEffect(() => {
-        getTodos();
+        //getTodos();
+        //deleteTodoHard(7);
     }, []);
 
     return <div>TodoContainer</div>;
